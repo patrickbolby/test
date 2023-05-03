@@ -1,0 +1,6 @@
+function my_map_shortcode() {
+    ob_start();
+    my_map();
+    return ob_get_clean();
+}
+add_shortcode( 'my_map', 'my_map_shortcode' );
